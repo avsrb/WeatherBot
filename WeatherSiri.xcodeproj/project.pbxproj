@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53FC85B7C53C0DC49B70EC97 /* Pods_WeatherSiri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5733DBCD13B30E6BCB9C128 /* Pods_WeatherSiri.framework */; };
+		AC013CB628B21A8100C8143A /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC013CB528B21A8100C8143A /* Private.swift */; };
+		AC013CB828B21BA500C8143A /* AssemblyWeatherSiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC013CB728B21BA500C8143A /* AssemblyWeatherSiri.swift */; };
 		AC6D11CA28B143A600C4FCD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */; };
 		AC6D11CC28B143A600C4FCD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */; };
 		AC6D11CE28B143A600C4FCD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11CD28B143A600C4FCD8 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4429DE597F1DE5E04CD69400 /* Pods-WeatherSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherSiri.release.xcconfig"; path = "Target Support Files/Pods-WeatherSiri/Pods-WeatherSiri.release.xcconfig"; sourceTree = "<group>"; };
+		98753C2EC20615C74BDC32DC /* Pods-WeatherSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherSiri.debug.xcconfig"; path = "Target Support Files/Pods-WeatherSiri/Pods-WeatherSiri.debug.xcconfig"; sourceTree = "<group>"; };
+		AC013CB528B21A8100C8143A /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		AC013CB728B21BA500C8143A /* AssemblyWeatherSiri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyWeatherSiri.swift; sourceTree = "<group>"; };
 		AC6D11C628B143A600C4FCD8 /* WeatherSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		AC6D11D228B143A700C4FCD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6D11D528B143A700C4FCD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6D11D728B143A700C4FCD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5733DBCD13B30E6BCB9C128 /* Pods_WeatherSiri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherSiri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FC85B7C53C0DC49B70EC97 /* Pods_WeatherSiri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E9F72983356E1A1A86C19CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98753C2EC20615C74BDC32DC /* Pods-WeatherSiri.debug.xcconfig */,
+				4429DE597F1DE5E04CD69400 /* Pods-WeatherSiri.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC6D11BD28B143A600C4FCD8 = {
 			isa = PBXGroup;
 			children = (
 				AC6D11C828B143A600C4FCD8 /* WeatherSiri */,
 				AC6D11C728B143A600C4FCD8 /* Products */,
+				6E9F72983356E1A1A86C19CB /* Pods */,
+				F850269E2DC24ADF05EAEA26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +76,7 @@
 		AC6D11C828B143A600C4FCD8 /* WeatherSiri */ = {
 			isa = PBXGroup;
 			children = (
+				AC013CB728B21BA500C8143A /* AssemblyWeatherSiri.swift */,
 				AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */,
 				AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */,
 				AC6D11CD28B143A600C4FCD8 /* ViewController.swift */,
@@ -63,8 +84,17 @@
 				AC6D11D228B143A700C4FCD8 /* Assets.xcassets */,
 				AC6D11D428B143A700C4FCD8 /* LaunchScreen.storyboard */,
 				AC6D11D728B143A700C4FCD8 /* Info.plist */,
+				AC013CB528B21A8100C8143A /* Private.swift */,
 			);
 			path = WeatherSiri;
+			sourceTree = "<group>";
+		};
+		F850269E2DC24ADF05EAEA26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5733DBCD13B30E6BCB9C128 /* Pods_WeatherSiri.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC6D11DA28B143A700C4FCD8 /* Build configuration list for PBXNativeTarget "WeatherSiri" */;
 			buildPhases = (
+				AB28630F23776F29CDAED38E /* [CP] Check Pods Manifest.lock */,
 				AC6D11C228B143A600C4FCD8 /* Sources */,
 				AC6D11C328B143A600C4FCD8 /* Frameworks */,
 				AC6D11C428B143A600C4FCD8 /* Resources */,
+				07B3CB93CE32E5251D4C9045 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07B3CB93CE32E5251D4C9045 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherSiri/Pods-WeatherSiri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherSiri/Pods-WeatherSiri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherSiri/Pods-WeatherSiri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB28630F23776F29CDAED38E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherSiri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC6D11C228B143A600C4FCD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC013CB828B21BA500C8143A /* AssemblyWeatherSiri.swift in Sources */,
 				AC6D11CE28B143A600C4FCD8 /* ViewController.swift in Sources */,
 				AC6D11CA28B143A600C4FCD8 /* AppDelegate.swift in Sources */,
 				AC6D11CC28B143A600C4FCD8 /* SceneDelegate.swift in Sources */,
+				AC013CB628B21A8100C8143A /* Private.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		AC6D11DB28B143A700C4FCD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98753C2EC20615C74BDC32DC /* Pods-WeatherSiri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +388,7 @@
 		};
 		AC6D11DC28B143A700C4FCD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4429DE597F1DE5E04CD69400 /* Pods-WeatherSiri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +402,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

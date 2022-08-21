@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import RecastAI
+import JSQMessagesViewController
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    //Vars
+    var bot : RecastAIClient?
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        self.bot = RecastAIClient(token : "YOUR_TOKEN")
+        self.bot = RecastAIClient(token : "YOUR_TOKEN", language: "YOUR_LANGUAGE")
     }
-
-
 }
-
