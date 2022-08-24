@@ -12,7 +12,7 @@
 		AC013CB828B21BA500C8143A /* AssemblyWeatherSiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC013CB728B21BA500C8143A /* AssemblyWeatherSiri.swift */; };
 		AC6D11CA28B143A600C4FCD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */; };
 		AC6D11CC28B143A600C4FCD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */; };
-		AC6D11CE28B143A600C4FCD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11CD28B143A600C4FCD8 /* ViewController.swift */; };
+		AC6D11CE28B143A600C4FCD8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D11CD28B143A600C4FCD8 /* MessagesViewController.swift */; };
 		AC6D11D128B143A600C4FCD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D11CF28B143A600C4FCD8 /* Main.storyboard */; };
 		AC6D11D328B143A700C4FCD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D11D228B143A700C4FCD8 /* Assets.xcassets */; };
 		AC6D11D628B143A700C4FCD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D11D428B143A700C4FCD8 /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 		AC6D11C628B143A600C4FCD8 /* WeatherSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC6D11CD28B143A600C4FCD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC6D11CD28B143A600C4FCD8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		AC6D11D028B143A600C4FCD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC6D11D228B143A700C4FCD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6D11D528B143A700C4FCD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				AC013CB728B21BA500C8143A /* AssemblyWeatherSiri.swift */,
 				AC6D11C928B143A600C4FCD8 /* AppDelegate.swift */,
 				AC6D11CB28B143A600C4FCD8 /* SceneDelegate.swift */,
-				AC6D11CD28B143A600C4FCD8 /* ViewController.swift */,
+				AC6D11CD28B143A600C4FCD8 /* MessagesViewController.swift */,
 				AC6D11CF28B143A600C4FCD8 /* Main.storyboard */,
 				AC6D11D228B143A700C4FCD8 /* Assets.xcassets */,
 				AC6D11D428B143A700C4FCD8 /* LaunchScreen.storyboard */,
@@ -213,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC013CB828B21BA500C8143A /* AssemblyWeatherSiri.swift in Sources */,
-				AC6D11CE28B143A600C4FCD8 /* ViewController.swift in Sources */,
+				AC6D11CE28B143A600C4FCD8 /* MessagesViewController.swift in Sources */,
 				AC6D11CA28B143A600C4FCD8 /* AppDelegate.swift in Sources */,
 				AC6D11CC28B143A600C4FCD8 /* SceneDelegate.swift in Sources */,
 				AC013CB628B21A8100C8143A /* Private.swift in Sources */,
@@ -292,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import JSQMessagesViewController
 
 protocol IWeatherSiri {
-    func assemble() -> UIViewController
+    func assemble() -> JSQMessagesViewController
 }
 
 final class AssemblyWeatherSiri: IWeatherSiri {
-    func assemble() -> UIViewController {
-        let viewController = ViewController()
+    func assemble() -> JSQMessagesViewController {
+        let viewController = MessagesViewController()
         return viewController
     }
 }
